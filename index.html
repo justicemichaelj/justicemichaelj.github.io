@@ -24746,7 +24746,7 @@
 <script>
   $(document).ready(function() {
     $('#theTable').DataTable({
-		$("#theTable_filter input").prop( 'id', 'search_box' );
+		
 		  responsive: true,
 		  columnDefs: [
 			{ responsivePriority: 1, targets: 1 },
@@ -24770,13 +24770,7 @@
                        }) 
         $('.dataTables_filter').append($searchButton, $clearButton);
 		} 
-	
 	});
-	$("#search_box").keyup(function(event) {
-    if (event.keyCode === 13) {
-        $("#searchButton").click();
-    }
-});
 } );
 
 
