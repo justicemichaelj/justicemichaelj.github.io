@@ -45,7 +45,7 @@
 	<div id="body">
 	<div style = "margin-bottom: 15px;">
 			<p style = "color: black; text-align: center"> 
-				1897 job postings.    New jobs posted daily.    Try the search to find the job you're looking for... <br>0   new jobs posted on last update at 2020-12-27 10:47 PM.
+				1897 job postings.    New jobs posted daily.    Try the search to find the job you're looking for. <br>0   new jobs posted on last update at 2020-12-27 10:47 PM.
         </p>
 	</div>
     <div class = "table-responsive">	
@@ -24745,14 +24745,14 @@
 	</div>
 <script>
   $(document).ready(function() {
-    $('#theTable').DataTable(
-          {responsive: true,
+    $('#theTable').DataTable({
+		  responsive: true,
 		  columnDefs: [
 			{ responsivePriority: 1, targets: 1 },
 			{ responsivePriority: 2, targets: 2 },
 			{ responsivePriority: 3, targets: 0 },
 			],
-		  order: [[ 0, "desc" ]];
+		  order: [[ 0, "desc" ]],
 		  initComplete : function() {
 			var input = $('.dataTables_filter input').unbind(),
             self = this.api(),
@@ -24768,7 +24768,7 @@
                           $searchButton.click(); 
                        }) 
         $('.dataTables_filter').append($searchButton, $clearButton);
-    } 
+		} 
 	});
 	} );
 </script>
