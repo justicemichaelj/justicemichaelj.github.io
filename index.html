@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<script src="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css"></script>
 	<script src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script>
+	<script type='text/javascript' src='js/fnFilterOnReturn.js'></script>
 </head>
 <body>
 	<div id="header">
@@ -24745,9 +24746,10 @@
 	</div>
 <script>
   $(document).ready(function() {
-    $('#theTable').DataTable({
+    var table = $('#theTable').dataTable({
 		
 		  responsive: true,
+		  pageLength: 25,
 		  columnDefs: [
 			{ responsivePriority: 1, targets: 1 },
 			{ responsivePriority: 2, targets: 2 },
@@ -24756,7 +24758,8 @@
 		  order: [[ 0, "desc" ]],
 		  initComplete : function() {
 			var input = $('.dataTables_filter input').unbind(),
-            self = this.api(),
+			self = this.api(),
+			
             $searchButton = $('<button>')
                        .text('search')
                        .click(function() {
@@ -24767,11 +24770,12 @@
                        .click(function() {
                           input.val('');
                           $searchButton.click(); 
-                       }) 
+                       })		
         $('.dataTables_filter').append($searchButton, $clearButton);
-		} 
-	});
+		}		
+	}).fnFilterOnReturn();
 } );
+
 
 </script>
 </body>
