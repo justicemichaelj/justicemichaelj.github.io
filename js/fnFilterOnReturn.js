@@ -28,6 +28,8 @@ jQuery.fn.dataTableExt.oApi.fnFilterOnReturn = function (oSettings) {
 				if (e.which == 13) {
 					$.fn.dataTableExt.iApiIndex = i;
 					_that.fnFilter(anControl.val());
+					e.preventDefault();
+					e.target.blur();
 				}
 			});
 		return this;
