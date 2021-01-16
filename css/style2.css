@@ -1,9 +1,12 @@
 /* Template by freewebsitetemplates.com */
 body {
-	background: #b3ecff;
+	background:url(../images/red_apple_2.jpg), url(../images/bg-body.jpg);
+	background-position: left top, left top;
+	background-repeat: no-repeat, repeat;
 	color: #315f52;
 	font-family: 'latoregular';
 	font-size: 14px;
+	
 	margin: 0;
 	padding: 0;
 }
@@ -27,6 +30,13 @@ body {
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'PTSerif-Caption';
+	src: url('../fonts/PT_Serif-Caption-Web-Regular.eot');
+	src: local('☺'), url('../fonts/PT_Serif-Caption-Web-Regular.woff') format('woff'), url('../fonts/PT_Serif-Caption-Web-Regular.ttf') format('truetype'), url('../fonts/PT_Serif-Caption-Web-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 a {
 	outline: none;
 }
@@ -47,27 +57,51 @@ p a:hover {
 	margin: 0 auto;
 	max-width: 960px;
 }
+.header img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  /*background: #555;*/
+ 
+}
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 5px;
+}
 #header h1 {
-	font-family: 'nixie_oneregular';
+	font: 34px Georgia, "Times New Roman", Times, serif;
+	/*font-family: ''PTSerif-Caption'';*/
 	font-size: 50px;
 	font-weight: normal;
-	font-variant: small-caps;
+	/*font-variant: small-caps;*/
+	text-transform: uppercase;
 	line-height: 50px;
 	margin: 0;
 	padding: 30px 0;
 	text-align: center;
 }
 #header h1 a {
-	color: #000000;
+	color: #ffffff;
 	text-decoration: none;
 }
 #header h1 a span {
-	color: #000000;
+	color: #ffffff;
 	display: block;
-	font-family: 'latoregular';
-	font-size: 26px;
+	font: Georgia, "Times New Roman", Times, serif;
+	/*font-family: 'latoregular';*/
+	/*font-size: 26px;*/
 	font-variant: normal;
-	/*text-transform: uppercase;*/
+	/*text-transform: capitalize;*/
+}
+.smallerFont {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.bigFont {
+  font-size: 26px;
+  text-transform: capitalize;
+  font-style: italic;
 }
 #header ul#navigation {
 	list-style: none;
@@ -81,7 +115,7 @@ p a:hover {
 	position: relative;
 }
 #header ul#navigation li a {
-	color: #000000;
+	color: #9ad0d6;
 	font-size: 18px;
 	padding: 0 46px;
 	text-align: center;
@@ -93,7 +127,7 @@ p a:hover {
 	color: #d3a3ff;
 }
 #header ul#navigation li.current a {
-	color: #000000; font-weight: bolder;
+	color: #9ad0d6; font-weight: bolder;
 }
 #header ul#navigation li ul {
 	display: none;
