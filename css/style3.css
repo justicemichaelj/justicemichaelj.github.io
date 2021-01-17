@@ -1,17 +1,12 @@
 /* Template by freewebsitetemplates.com */
-
 body {
-	background-image:url(../images/red_apple_2.jpg), url(../images/bg-body.jpg);
-	background-position: left, left top;
-	background-repeat: repeat, repeat;
+	background: #077054;
 	color: #315f52;
 	font-family: 'latoregular';
 	font-size: 14px;
-	
 	margin: 0;
 	padding: 0;
 }
-
 @font-face {
 	font-family: 'latoregular';
 	src: url('../fonts/lato-regular-webfont.eot');
@@ -32,13 +27,6 @@ body {
 	font-weight: normal;
 	font-style: normal;
 }
-@font-face {
-	font-family: 'PTSerif-Caption';
-	src: url('../fonts/PT_Serif-Caption-Web-Regular.eot');
-	src: local('☺'), url('../fonts/PT_Serif-Caption-Web-Regular.woff') format('woff'), url('../fonts/PT_Serif-Caption-Web-Regular.ttf') format('truetype'), url('../fonts/PT_Serif-Caption-Web-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 a {
 	outline: none;
 }
@@ -50,65 +38,33 @@ p {
 	margin: 0;
 }
 p a {
-	color: #000000;
+	color: #315f52;
 }
 p a:hover {
 	color: #451374;
 }
 #header {
 	margin: 0 auto;
-	max-width: 480px;
-}
-.header img {
-  float: left;
-  width: 160px;
-  height: 200px;
-  margin-left: 100px;
-  margin-top: 20px;
- 
-}
-.header h1 {
-  position: relative;
-  top: 18px;
-  left: 5px;
-}
-.header_image {
-    float: left;
-	margin-left: 20px;
+	max-width: 960px;
 }
 #header h1 {
-	font: 34px Georgia, "Times New Roman", Times, serif;
-	/*font-family: ''PTSerif-Caption'';*/
 	font-size: 50px;
 	font-weight: normal;
-	/*font-variant: small-caps;*/
-	text-transform: uppercase;
 	line-height: 50px;
 	margin: 0;
 	padding: 30px 0;
 	text-align: center;
 }
 #header h1 a {
-	color: #ffffff;
+	color: #99fa99;
 	text-decoration: none;
 }
 #header h1 a span {
-	color: #ffffff;
+	color: #b6d8cf;
 	display: block;
-	font: Georgia, "Times New Roman", Times, serif;
-	/*font-family: 'latoregular';*/
-	/*font-size: 26px;*/
-	font-variant: normal;
-	/*text-transform: capitalize;*/
-}
-.smallerFont {
-  font-size: 16px;
-  text-transform: uppercase;
-}
-.bigFont {
-  font-size: 26px;
-  text-transform: capitalize;
-  font-style: italic;
+	font-family: 'nixie_oneregular';
+	font-size: 26px;
+	text-transform: uppercase;
 }
 #header ul#navigation {
 	list-style: none;
@@ -122,9 +78,9 @@ p a:hover {
 	position: relative;
 }
 #header ul#navigation li a {
-	color: #9ad0d6;
+	color: #b6d8cf;
 	font-size: 18px;
-	padding: 0 30px;
+	padding: 0 46px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -134,7 +90,7 @@ p a:hover {
 	color: #d3a3ff;
 }
 #header ul#navigation li.current a {
-	color: #9ad0d6; font-weight: bolder;
+	color: #99fa99;
 }
 #header ul#navigation li ul {
 	display: none;
@@ -149,7 +105,7 @@ p a:hover {
 	display: block;
 }
 #header ul#navigation li ul li {
-	background: #ffffff;
+	background: #077054;
 	display: block;
 	height: 46px;
 	line-height: 46px;
@@ -158,7 +114,7 @@ p a:hover {
 	padding: 0 20px;
 }
 #header ul#navigation li.current ul li a {
-	color: #000000;
+	color: #b6d8cf;
 }
 #body {
 	background: #ffffff;
@@ -169,7 +125,7 @@ p a:hover {
 	padding: 45px 40px 46px;
 }
 #body > h2 {
-	color: #000000;
+	color: #21a51e;
 	font-family: 'nixie_oneregular';
 	font-size: 35px;
 	font-weight: normal;
@@ -191,7 +147,7 @@ p a:hover {
 }
 #body div#tagline h1 {
 	background: url(../images/bg-separator.png) no-repeat center bottom;
-	color: #000000;
+	color: #21a51e;
 	font-family: 'nixie_oneregular';
 	font-size: 100px;
 	font-weight: normal;
@@ -202,7 +158,7 @@ p a:hover {
 	text-transform: uppercase;
 }
 #body div#tagline p {
-	color: #000000;
+	color: #21a51e;
 	font-family: 'nixie_oneregular';
 	font-size: 100px;
 	line-height: 100px;
