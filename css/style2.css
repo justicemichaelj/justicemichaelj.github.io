@@ -1,8 +1,9 @@
 /* Template by freewebsitetemplates.com */
+
 body {
-	background:url(../images/red_apple_2.jpg), url(../images/bg-body.jpg);
-	background-position: left top, left top;
-	background-repeat: no-repeat, repeat;
+	background-image:url(../images/red_apple_2.jpg), url(../images/bg-body.jpg);
+	background-position: left, left top;
+	background-repeat: repeat, repeat;
 	color: #315f52;
 	font-family: 'latoregular';
 	font-size: 14px;
@@ -10,6 +11,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 @font-face {
 	font-family: 'latoregular';
 	src: url('../fonts/lato-regular-webfont.eot');
@@ -55,19 +57,24 @@ p a:hover {
 }
 #header {
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 480px;
 }
 .header img {
   float: left;
-  width: 200px;
+  width: 160px;
   height: 200px;
-  /*background: #555;*/
+  margin-left: 100px;
+  margin-top: 20px;
  
 }
 .header h1 {
   position: relative;
   top: 18px;
   left: 5px;
+}
+.header_image {
+    float: left;
+	margin-left: 20px;
 }
 #header h1 {
 	font: 34px Georgia, "Times New Roman", Times, serif;
@@ -95,7 +102,7 @@ p a:hover {
 	/*text-transform: capitalize;*/
 }
 .smallerFont {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 .bigFont {
@@ -117,7 +124,7 @@ p a:hover {
 #header ul#navigation li a {
 	color: #9ad0d6;
 	font-size: 18px;
-	padding: 0 46px;
+	padding: 0 30px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
