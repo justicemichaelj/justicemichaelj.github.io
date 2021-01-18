@@ -61,9 +61,8 @@ p a:hover {
 }
 .header img {
   float: left;
-  width: 100%;
-  max-width:160px;
-  height: auto;
+  width: 144px;
+  height: 170px;
   margin-left: 100px;
   margin-top: 20px;
  
