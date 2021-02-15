@@ -57,7 +57,7 @@ p a:hover {
 }
 #header {
 	margin: 0 auto;
-	max-width: 480px;
+	max-width: 520px;
 }
 .header img {
   float: left;
@@ -111,6 +111,7 @@ p a:hover {
   font-style: italic;
 }
 #header ul#navigation {
+	width: 520px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -124,7 +125,7 @@ p a:hover {
 #header ul#navigation li a {
 	color: #9ad0d6;
 	font-size: 18px;
-	padding: 0 30px;
+	padding: 10px 10px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
