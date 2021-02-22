@@ -50,4 +50,115 @@
 	<div id="body">
 			<div>
 				<h3 style="padding-left:10px; padding-right: 10px;">Education Job Search is a free service for job seekers that compiles many education job listings into one place. New jobs are posted daily.</h3>	
+				<h3 style="padding-left:10px; padding-right: 10px; text-align: center;"> <a href="listings.html">Click here to view all 3710 active job postings.</a></h3><div style = "margin-bottom: 15px;">
+					<p style = "color: black; text-align: center; padding-left:10px; padding-right: 10px;">
+                    1   new jobs posted on last update at 09:16 PM on Feb 21.</p>
+				</div>
+				<h3 style="padding-left:10px; padding-right: 10px;"> Here are some of the most recent job postings. </h3>
+				<div class = "table-responsive">	
+		<table id = "theTable" class="display responsive" style="width:100%">
+<thead>
+   <tr class = "header">
+	 <th>Date Posted</th>
+     <th>Job Title</th>
+     <th>District</th>
+     <th>County</th>
+     <th>State</th>
+	 <th>Job Type</th>
+  </tr>
+ </thead>
+ <tbody>
+            <tr>
+                <td style="padding: 2px">2021-02-21</td>
+                <td>
+                    <a href="https://capeflattery.tedk12.com/hire/ViewJob.aspx?JobID=2265" target="_blank">
+                        <div style="height:100%;width:100%">
+                            English Language Arts Teacher
+                        </div>
+                    </a>
+                </td>
+                <td>Cape Flattery School District</td>
+                <td>Clallam</td>
+                <td>WA</td>
+                <td style="text-align:center">Secondary Certified</td>
+            </tr></table><h3 style="padding-left:10px; padding-right: 10px; text-align: center;"> <a href="listings.html">Click here to view all 3710 active job postings.</a></h3><div>
+			
+				<h3 style="padding-left:10px; padding-right: 10px;">Currently we are serving Washington state and surrounding communities. &nbsp; <a href="serving.html"> Click here</a> to see a detailed list of school districts we serve.</h3>
 				
+				<p style="color: black; padding-left:10px; padding-right: 10px;">
+					<br>
+				</p>
+				<h3 style="padding-left:10px; padding-right: 10px;">Instructions For Employers</h3>
+				<p style="color: black; padding-left:10px; padding-right: 10px;">
+					 If you don't see your school/district jobs listed, <a href="contact.html"> contact us</a> to learn how to get your jobs posted.
+				</p>
+            </div>
+		
+	</div>	
+	</div>
+	<div id="footer">
+		<div>
+			
+		</div>
+		<div id="connect">
+			
+		</div>
+	</div>
+	</div>
+<div id="footer">
+	<p style="color:lightgray; font-size: 10px;">
+		These listings and links are being provided as a convenience and for informational purposes only; Ed Job Search bears no responsibility for the accuracy or content of the external site or for that of subsequent links. 
+	</p>
+		<div>
+			<!--<span>123 St. City Location, Country | 987654321</span>
+			<p>
+				These listings and links are being provided as a convenience and for informational purposes only; Ed Job Search bears no responsibility for the accuracy or content of the external site or for that of subsequent links. 
+			</p>-->
+		</div>
+		<!--<div id="connect">
+			<a href="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</a>
+			<a href="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</a>
+			<a href="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</a>
+			<a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
+		</div>-->
+	</div>
+	<script>
+  $(document).ready(function() {
+    var table = $('#theTable').dataTable({
+	language: {
+            searchPanes: {
+                clearMessage: 'Clear',
+                collapse: {0: 'Search Filters', _: 'Search Options (%d)'}
+            }
+        },
+        dom: 'Bfrtip', "bFilter": false, "paging": false, "bInfo" : false,
+		  responsive: true,
+		  pageLength: 25,
+		  columnDefs: [
+			{ responsivePriority: 1, targets: 1 },
+			{ responsivePriority: 2, targets: 2 },
+			{ responsivePriority: 3, targets: 0 },
+			],
+		  order: [[ 0, "desc" ]],
+		  initComplete : function() {
+			var input = $('.dataTables_filter input').unbind(),
+			self = this.api(),
+			
+            $searchButton = $('<button>')
+                       .text('search')
+                       .click(function() {
+                          self.search(input.val()).draw();
+                       }),
+            $clearButton = $('<button>')
+                       .text('clear')
+                       .click(function() {
+                          input.val('');
+                          $searchButton.click(); 
+                       })		
+        $('.dataTables_filter').append($searchButton, $clearButton);
+		}		
+	}) 
+} );
+</script>
+</body>
+</html>
